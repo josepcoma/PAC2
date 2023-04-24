@@ -1,0 +1,315 @@
+Prefix(:=<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
+Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
+Prefix(Wine_PAC2:=<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#>)
+
+
+Ontology(<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2>
+Annotation(rdfs:comment "A set of data on Spanish wines.
+Author: Josep Coma")
+
+Declaration(Class(Wine_PAC2:Acidity))
+Declaration(Class(Wine_PAC2:Age))
+Declaration(Class(Wine_PAC2:Aging))
+Declaration(Class(Wine_PAC2:AlcoholLevel))
+Declaration(Class(Wine_PAC2:AltitudeOfYardGrapes))
+Declaration(Class(Wine_PAC2:Body))
+Declaration(Class(Wine_PAC2:ColorOfWine))
+Declaration(Class(Wine_PAC2:Country))
+Declaration(Class(Wine_PAC2:CurrentCentury))
+Declaration(Class(Wine_PAC2:GreatReserve))
+Declaration(Class(Wine_PAC2:LastCentury))
+Declaration(Class(Wine_PAC2:NumReviews))
+Declaration(Class(Wine_PAC2:OriginDenomination))
+Declaration(Class(Wine_PAC2:OtherType))
+Declaration(Class(Wine_PAC2:Price))
+Declaration(Class(Wine_PAC2:Rating))
+Declaration(Class(Wine_PAC2:Red))
+Declaration(Class(Wine_PAC2:Region))
+Declaration(Class(Wine_PAC2:Reserve))
+Declaration(Class(Wine_PAC2:Rose))
+Declaration(Class(Wine_PAC2:Swetness))
+Declaration(Class(Wine_PAC2:Type))
+Declaration(Class(Wine_PAC2:TypeOfGrapes))
+Declaration(Class(Wine_PAC2:TypeOfVat))
+Declaration(Class(Wine_PAC2:VeryGoodQuality))
+Declaration(Class(Wine_PAC2:White))
+Declaration(Class(Wine_PAC2:Wine))
+Declaration(Class(Wine_PAC2:Winery))
+Declaration(Class(Wine_PAC2:Year))
+Declaration(Class(Wine_PAC2:Young))
+Declaration(ObjectProperty(Wine_PAC2:hasOriginDenomination))
+Declaration(ObjectProperty(Wine_PAC2:hasPrice))
+Declaration(ObjectProperty(Wine_PAC2:hasType))
+Declaration(DataProperty(Wine_PAC2:hasRating))
+Declaration(DataProperty(Wine_PAC2:hasYear))
+Declaration(NamedIndividual(Wine_PAC2:Espana))
+Declaration(NamedIndividual(Wine_PAC2:Gines_Liebana_Pedro_Ximenez))
+Declaration(NamedIndividual(Wine_PAC2:Montilla-Moriles))
+Declaration(NamedIndividual(Wine_PAC2:Pedro_Ximenez))
+Declaration(NamedIndividual(Wine_PAC2:Toro_Albala))
+Declaration(NamedIndividual(<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1910>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#4.6>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#5>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#70>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#701.05>))
+Declaration(AnnotationProperty(Wine_PAC2:sameAs))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: Wine_PAC2:hasOriginDenomination (Wine_PAC2:hasOriginDenomination)
+
+ObjectPropertyDomain(Wine_PAC2:hasOriginDenomination Wine_PAC2:Winery)
+ObjectPropertyRange(Wine_PAC2:hasOriginDenomination Wine_PAC2:OriginDenomination)
+
+# Object Property: Wine_PAC2:hasPrice (Wine_PAC2:hasPrice)
+
+ObjectPropertyDomain(Wine_PAC2:hasPrice Wine_PAC2:Price)
+ObjectPropertyRange(Wine_PAC2:hasPrice ObjectMinCardinality(0 Wine_PAC2:hasPrice Wine_PAC2:Price))
+
+# Object Property: Wine_PAC2:hasType (Wine_PAC2:hasType)
+
+AsymmetricObjectProperty(Wine_PAC2:hasType)
+ObjectPropertyDomain(Wine_PAC2:hasType Wine_PAC2:Wine)
+ObjectPropertyRange(Wine_PAC2:hasType Wine_PAC2:Type)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: Wine_PAC2:hasRating (Wine_PAC2:hasRating)
+
+FunctionalDataProperty(Wine_PAC2:hasRating)
+DataPropertyDomain(Wine_PAC2:hasRating Wine_PAC2:Rating)
+DataPropertyRange(Wine_PAC2:hasRating xsd:decimal)
+
+# Data Property: Wine_PAC2:hasYear (Wine_PAC2:hasYear)
+
+DataPropertyDomain(Wine_PAC2:hasYear Wine_PAC2:Year)
+DataPropertyRange(Wine_PAC2:hasYear xsd:integer)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: Wine_PAC2:Acidity (Wine_PAC2:Acidity)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Acidity "Acidity score, defined as wine's “pucker” or tartness; it's what makes a wine refreshing and your tongue salivate and want another sip [from 1-5]")
+SubClassOf(Wine_PAC2:Acidity Wine_PAC2:Type)
+
+# Class: Wine_PAC2:Age (Wine_PAC2:Age)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Age "Characteristics of the wine according to its age")
+SubClassOf(Wine_PAC2:Age Wine_PAC2:Wine)
+
+# Class: Wine_PAC2:Aging (Wine_PAC2:Aging)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Aging "Aging wine")
+SubClassOf(Wine_PAC2:Aging Wine_PAC2:Age)
+
+# Class: Wine_PAC2:AlcoholLevel (Wine_PAC2:AlcoholLevel)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:AlcoholLevel "Alcohol level of wine, measured in degrees")
+SubClassOf(Wine_PAC2:AlcoholLevel Wine_PAC2:Type)
+
+# Class: Wine_PAC2:AltitudeOfYardGrapes (Wine_PAC2:AltitudeOfYardGrapes)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:AltitudeOfYardGrapes "Altitude of the vineyard where the grapes were grown")
+SubClassOf(Wine_PAC2:AltitudeOfYardGrapes Wine_PAC2:Winery)
+
+# Class: Wine_PAC2:Body (Wine_PAC2:Body)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Body "Body score, defined as the richness and weight of the wine in your mouth [from 1-5]")
+SubClassOf(Wine_PAC2:Body Wine_PAC2:Type)
+
+# Class: Wine_PAC2:ColorOfWine (Wine_PAC2:ColorOfWine)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:ColorOfWine "Wine color")
+SubClassOf(Wine_PAC2:ColorOfWine Wine_PAC2:Wine)
+
+# Class: Wine_PAC2:Country (Wine_PAC2:Country)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Country "Country of origin [Spain]")
+SubClassOf(Wine_PAC2:Country Wine_PAC2:Winery)
+
+# Class: Wine_PAC2:CurrentCentury (Wine_PAC2:CurrentCentury)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:CurrentCentury "The wine that is in this class is because it is from the current century")
+SubClassOf(Wine_PAC2:CurrentCentury Wine_PAC2:Year)
+
+# Class: Wine_PAC2:GreatReserve (Wine_PAC2:GreatReserve)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:GreatReserve "Great reserve Wine")
+SubClassOf(Wine_PAC2:GreatReserve Wine_PAC2:Age)
+
+# Class: Wine_PAC2:LastCentury (Wine_PAC2:LastCentury)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:LastCentury "The wine that is in this class is because it is from the last century")
+SubClassOf(Wine_PAC2:LastCentury Wine_PAC2:Year)
+
+# Class: Wine_PAC2:NumReviews (Wine_PAC2:NumReviews)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:NumReviews "Number of users that reviewed the wine")
+SubClassOf(Wine_PAC2:NumReviews Wine_PAC2:Wine)
+
+# Class: Wine_PAC2:OriginDenomination (Wine_PAC2:OriginDenomination)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:OriginDenomination "Name of the Denomination origin , if it exists")
+SubClassOf(Wine_PAC2:OriginDenomination Wine_PAC2:Wine)
+
+# Class: Wine_PAC2:OtherType (Wine_PAC2:OtherType)
+
+SubClassOf(Wine_PAC2:OtherType Wine_PAC2:ColorOfWine)
+
+# Class: Wine_PAC2:Price (Wine_PAC2:Price)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Price "Price in euros [€]")
+SubClassOf(Wine_PAC2:Price Wine_PAC2:Wine)
+
+# Class: Wine_PAC2:Rating (Wine_PAC2:Rating)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Rating "Average rating given to the wine by the users [from 1-5]")
+SubClassOf(Wine_PAC2:Rating Wine_PAC2:Wine)
+
+# Class: Wine_PAC2:Red (Wine_PAC2:Red)
+
+SubClassOf(Wine_PAC2:Red Wine_PAC2:ColorOfWine)
+
+# Class: Wine_PAC2:Region (Wine_PAC2:Region)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Region "Region of the wine")
+SubClassOf(Wine_PAC2:Region Wine_PAC2:Winery)
+
+# Class: Wine_PAC2:Reserve (Wine_PAC2:Reserve)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Reserve "Reserve wine")
+SubClassOf(Wine_PAC2:Reserve Wine_PAC2:Age)
+
+# Class: Wine_PAC2:Rose (Wine_PAC2:Rose)
+
+SubClassOf(Wine_PAC2:Rose Wine_PAC2:ColorOfWine)
+
+# Class: Wine_PAC2:Swetness (Wine_PAC2:Swetness)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Swetness "Swetness score, degree of sweetness of the wine [from 1-5]")
+SubClassOf(Wine_PAC2:Swetness Wine_PAC2:Type)
+
+# Class: Wine_PAC2:Type (Wine_PAC2:Type)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Type "Wine variety")
+SubClassOf(Wine_PAC2:Type Wine_PAC2:Wine)
+
+# Class: Wine_PAC2:TypeOfGrapes (Wine_PAC2:TypeOfGrapes)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:TypeOfGrapes "Type of grape used to make wine")
+SubClassOf(Wine_PAC2:TypeOfGrapes Wine_PAC2:Type)
+
+# Class: Wine_PAC2:TypeOfVat (Wine_PAC2:TypeOfVat)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:TypeOfVat "Type of vat used to ferment wine")
+SubClassOf(Wine_PAC2:TypeOfVat Wine_PAC2:Winery)
+
+# Class: Wine_PAC2:VeryGoodQuality (Wine_PAC2:VeryGoodQuality)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:VeryGoodQuality "The wine that is in this class is because they have a rating higher than 4.5")
+SubClassOf(Wine_PAC2:VeryGoodQuality Wine_PAC2:Rating)
+
+# Class: Wine_PAC2:White (Wine_PAC2:White)
+
+SubClassOf(Wine_PAC2:White Wine_PAC2:ColorOfWine)
+
+# Class: Wine_PAC2:Wine (Wine_PAC2:Wine)
+
+AnnotationAssertion(Wine_PAC2:sameAs Wine_PAC2:Wine "https://dbpedia.org/ontology/Wine")
+AnnotationAssertion(rdfs:comment Wine_PAC2:Wine "Name of the wine")
+
+# Class: Wine_PAC2:Winery (Wine_PAC2:Winery)
+
+AnnotationAssertion(Wine_PAC2:sameAs Wine_PAC2:Winery "https://dbpedia.org/ontology/Winery")
+AnnotationAssertion(rdfs:comment Wine_PAC2:Winery "Winery name")
+SubClassOf(Wine_PAC2:Winery Wine_PAC2:Wine)
+
+# Class: Wine_PAC2:Year (Wine_PAC2:Year)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Year "Year in which the grapes were harvested")
+SubClassOf(Wine_PAC2:Year Wine_PAC2:Wine)
+
+# Class: Wine_PAC2:Young (Wine_PAC2:Young)
+
+AnnotationAssertion(rdfs:comment Wine_PAC2:Young "Young wine")
+SubClassOf(Wine_PAC2:Young Wine_PAC2:Age)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: Wine_PAC2:Espana (Wine_PAC2:Espana)
+
+ClassAssertion(Wine_PAC2:Country Wine_PAC2:Espana)
+
+# Individual: Wine_PAC2:Gines_Liebana_Pedro_Ximenez (Wine_PAC2:Gines_Liebana_Pedro_Ximenez)
+
+ClassAssertion(Wine_PAC2:Wine Wine_PAC2:Gines_Liebana_Pedro_Ximenez)
+ObjectPropertyAssertion(Wine_PAC2:hasOriginDenomination Wine_PAC2:Gines_Liebana_Pedro_Ximenez Wine_PAC2:Pedro_Ximenez)
+ObjectPropertyAssertion(Wine_PAC2:hasPrice Wine_PAC2:Gines_Liebana_Pedro_Ximenez <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#701.05>)
+ObjectPropertyAssertion(Wine_PAC2:hasType Wine_PAC2:Gines_Liebana_Pedro_Ximenez Wine_PAC2:Pedro_Ximenez)
+DataPropertyAssertion(Wine_PAC2:hasRating Wine_PAC2:Gines_Liebana_Pedro_Ximenez "4.6"^^xsd:decimal)
+DataPropertyAssertion(Wine_PAC2:hasYear Wine_PAC2:Gines_Liebana_Pedro_Ximenez "1910"^^xsd:integer)
+
+# Individual: Wine_PAC2:Montilla-Moriles (Wine_PAC2:Montilla-Moriles)
+
+ClassAssertion(Wine_PAC2:Region Wine_PAC2:Montilla-Moriles)
+
+# Individual: Wine_PAC2:Pedro_Ximenez (Wine_PAC2:Pedro_Ximenez)
+
+ClassAssertion(Wine_PAC2:Type Wine_PAC2:Pedro_Ximenez)
+
+# Individual: Wine_PAC2:Toro_Albala (Wine_PAC2:Toro_Albala)
+
+ClassAssertion(Wine_PAC2:Winery Wine_PAC2:Toro_Albala)
+DataPropertyAssertion(Wine_PAC2:hasRating Wine_PAC2:Toro_Albala "4.6"^^xsd:decimal)
+DataPropertyAssertion(Wine_PAC2:hasYear Wine_PAC2:Toro_Albala "1910"^^xsd:integer)
+
+# Individual: <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1> (<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1>)
+
+ClassAssertion(Wine_PAC2:Acidity <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1>)
+
+# Individual: <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1910> (<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1910>)
+
+ClassAssertion(Wine_PAC2:Year <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1910>)
+
+# Individual: <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#4.6> (<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#4.6>)
+
+ClassAssertion(Wine_PAC2:Rating <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#4.6>)
+
+# Individual: <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#5> (<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#5>)
+
+ClassAssertion(Wine_PAC2:Body <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#5>)
+
+# Individual: <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#70> (<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#70>)
+
+ClassAssertion(Wine_PAC2:NumReviews <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#70>)
+
+# Individual: <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#701.05> (<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#701.05>)
+
+ClassAssertion(Wine_PAC2:Price <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#701.05>)
+
+
+DisjointClasses(Wine_PAC2:Aging Wine_PAC2:GreatReserve Wine_PAC2:Reserve Wine_PAC2:Young)
+DisjointClasses(Wine_PAC2:OtherType Wine_PAC2:Red Wine_PAC2:Rose Wine_PAC2:White)
+DLSafeRule(Body(BuiltInAtom(swrlb:greaterThan Variable(<urn:swrl:var#v>) "4.5"^^xsd:decimal) DataPropertyAtom(Wine_PAC2:hasRating Variable(<urn:swrl:var#r>) Variable(<urn:swrl:var#v>)) ClassAtom(Wine_PAC2:Rating Variable(<urn:swrl:var#r>)))Head(ClassAtom(Wine_PAC2:VeryGoodQuality Variable(<urn:swrl:var#r>))))
+DLSafeRule(Body(ClassAtom(Wine_PAC2:Year Variable(<urn:swrl:var#y>)) DataPropertyAtom(Wine_PAC2:hasYear Variable(<urn:swrl:var#y>) Variable(<urn:swrl:var#v>)) BuiltInAtom(swrlb:greaterThan Variable(<urn:swrl:var#v>) "2000"^^xsd:integer))Head(ClassAtom(Wine_PAC2:CurrentCentury Variable(<urn:swrl:var#y>))))
+DLSafeRule(Body(ClassAtom(Wine_PAC2:Year Variable(<urn:swrl:var#y>)) BuiltInAtom(swrlb:lessThan Variable(<urn:swrl:var#v>) "2001"^^xsd:integer) DataPropertyAtom(Wine_PAC2:hasYear Variable(<urn:swrl:var#y>) Variable(<urn:swrl:var#v>)))Head(ClassAtom(Wine_PAC2:LastCentury Variable(<urn:swrl:var#y>))))
+)
