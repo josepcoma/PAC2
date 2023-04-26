@@ -1,0 +1,35 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "Wine_PAC2:NumReviews" "Wine_PAC2:Rose" "Wine_PAC2:Young" "Wine_PAC2:Swetness" "Wine_PAC2:Age" "Wine_PAC2:Rating" "Wine_PAC2:CurrentCentury" "Wine_PAC2:Aging" "Wine_PAC2:Country" "Wine_PAC2:Reserve" "Wine_PAC2:Acidity" "Wine_PAC2:VeryGoodQuality" "Wine_PAC2:TypeOfVat" "Wine_PAC2:Year" "Wine_PAC2:Wine" "Wine_PAC2:LastCentury" "Wine_PAC2:Type" "Wine_PAC2:Price" "Wine_PAC2:OtherType" "Wine_PAC2:Body" "Wine_PAC2:ColorOfWine" "Wine_PAC2:Region" "Wine_PAC2:GreatReserve" "Wine_PAC2:AltitudeOfYardGrapes" "Wine_PAC2:Winery" "Wine_PAC2:Red" "Wine_PAC2:OriginDenomination" "Wine_PAC2:TypeOfGrapes" "Wine_PAC2:White" "Wine_PAC2:AlcoholLevel" ; /*classes style*/
+	"Wine_PAC2:Young" -> "Wine_PAC2:Age" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:AltitudeOfYardGrapes" -> "Wine_PAC2:Winery" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:LastCentury" -> "Wine_PAC2:Year" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Year" -> "Wine_PAC2:Wine" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:GreatReserve" -> "Wine_PAC2:Age" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:AlcoholLevel" -> "Wine_PAC2:Type" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Rose" -> "Wine_PAC2:ColorOfWine" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Region" -> "Wine_PAC2:Winery" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:White" -> "Wine_PAC2:ColorOfWine" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:TypeOfGrapes" -> "Wine_PAC2:Type" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Price" -> "Wine_PAC2:Wine" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Acidity" -> "Wine_PAC2:Type" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:ColorOfWine" -> "Wine_PAC2:Wine" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:NumReviews" -> "Wine_PAC2:Wine" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Swetness" -> "Wine_PAC2:Type" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Type" -> "Wine_PAC2:Wine" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:TypeOfVat" -> "Wine_PAC2:Winery" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:OriginDenomination" -> "Wine_PAC2:Wine" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Rating" -> "Wine_PAC2:Wine" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Winery" -> "Wine_PAC2:Wine" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:VeryGoodQuality" -> "Wine_PAC2:Rating" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Reserve" -> "Wine_PAC2:Age" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Aging" -> "Wine_PAC2:Age" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Body" -> "Wine_PAC2:Type" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Country" -> "Wine_PAC2:Winery" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Age" -> "Wine_PAC2:Wine" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:OtherType" -> "Wine_PAC2:ColorOfWine" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:CurrentCentury" -> "Wine_PAC2:Year" [ label = "rdfs:subClassOf" ];
+	"Wine_PAC2:Red" -> "Wine_PAC2:ColorOfWine" [ label = "rdfs:subClassOf" ];
+
+}
