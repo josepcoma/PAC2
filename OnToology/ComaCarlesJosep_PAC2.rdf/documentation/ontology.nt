@@ -1,0 +1,435 @@
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of data on Spanish wines.\nAuthor: Josep Coma" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#sameAs
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasOriginDenomination
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasOriginDenomination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasOriginDenomination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Winery> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasOriginDenomination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#OriginDenomination> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasPrice
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Price> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasPrice> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Price> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasPrice> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasType
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Type> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasRating
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Rating> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasYear
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Year> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Acidity
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Acidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Acidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Type> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Acidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Acidity score, defined as wine's “pucker” or tartness; it's what makes a wine refreshing and your tongue salivate and want another sip [from 1-5]" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Age
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Age> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Age> <http://www.w3.org/2000/01/rdf-schema#comment> "Characteristics of the wine according to its age" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Aging
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Aging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Aging> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Age> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Aging> <http://www.w3.org/2000/01/rdf-schema#comment> "Aging wine" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#AlcoholLevel
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#AlcoholLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#AlcoholLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Type> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#AlcoholLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Alcohol level of wine, measured in degrees" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#AltitudeOfYardGrapes
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#AltitudeOfYardGrapes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#AltitudeOfYardGrapes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Winery> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#AltitudeOfYardGrapes> <http://www.w3.org/2000/01/rdf-schema#comment> "Altitude of the vineyard where the grapes were grown" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Body
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Type> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Body> <http://www.w3.org/2000/01/rdf-schema#comment> "Body score, defined as the richness and weight of the wine in your mouth [from 1-5]" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#ColorOfWine
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#ColorOfWine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#ColorOfWine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#ColorOfWine> <http://www.w3.org/2000/01/rdf-schema#comment> "Wine color" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Country
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Winery> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Country of origin [Spain]" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#CurrentCentury
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#CurrentCentury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#CurrentCentury> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Year> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#CurrentCentury> <http://www.w3.org/2000/01/rdf-schema#comment> "The wine that is in this class is because it is from the current century" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#GreatReserve
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#GreatReserve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#GreatReserve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Age> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#GreatReserve> <http://www.w3.org/2000/01/rdf-schema#comment> "Great reserve Wine" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#LastCentury
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#LastCentury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#LastCentury> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Year> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#LastCentury> <http://www.w3.org/2000/01/rdf-schema#comment> "The wine that is in this class is because it is from the last century" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#NumReviews
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#NumReviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#NumReviews> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#NumReviews> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of users that reviewed the wine" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#OriginDenomination
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#OriginDenomination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#OriginDenomination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#OriginDenomination> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the Denomination origin , if it exists" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#OtherType
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#OtherType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#OtherType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#ColorOfWine> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Price
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Price> <http://www.w3.org/2000/01/rdf-schema#comment> "Price in euros [€]" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Rating
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Average rating given to the wine by the users [from 1-5]" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Red
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Red> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#ColorOfWine> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Region
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Winery> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "Region of the wine" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Reserve
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Reserve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Reserve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Age> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Reserve> <http://www.w3.org/2000/01/rdf-schema#comment> "Reserve wine" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Rose
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Rose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Rose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#ColorOfWine> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Swetness
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Swetness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Swetness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Type> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Swetness> <http://www.w3.org/2000/01/rdf-schema#comment> "Swetness score, degree of sweetness of the wine [from 1-5]" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Type
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Type> <http://www.w3.org/2000/01/rdf-schema#comment> "Wine variety" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#TypeOfGrapes
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#TypeOfGrapes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#TypeOfGrapes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Type> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#TypeOfGrapes> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of grape used to make wine" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#TypeOfVat
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#TypeOfVat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#TypeOfVat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Winery> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#TypeOfVat> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of vat used to ferment wine" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#VeryGoodQuality
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#VeryGoodQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#VeryGoodQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Rating> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#VeryGoodQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "The wine that is in this class is because they have a rating higher than 4.5" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#White
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#White> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#White> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#ColorOfWine> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#sameAs> "https://dbpedia.org/ontology/Wine" .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the wine" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Winery
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Winery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Winery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Winery> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#sameAs> "https://dbpedia.org/ontology/Winery" .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Winery> <http://www.w3.org/2000/01/rdf-schema#comment> "Winery name" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Year
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Year> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Year> <http://www.w3.org/2000/01/rdf-schema#comment> "Year in which the grapes were harvested" .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Young
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Young> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Young> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Age> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Young> <http://www.w3.org/2000/01/rdf-schema#comment> "Young wine" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Espana
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Espana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Espana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Country> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Gines_Liebana_Pedro_Ximenez
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Gines_Liebana_Pedro_Ximenez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Gines_Liebana_Pedro_Ximenez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Wine> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Gines_Liebana_Pedro_Ximenez> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasOriginDenomination> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Pedro_Ximenez> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Gines_Liebana_Pedro_Ximenez> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasPrice> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#701.05> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Gines_Liebana_Pedro_Ximenez> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasType> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Pedro_Ximenez> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Gines_Liebana_Pedro_Ximenez> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Gines_Liebana_Pedro_Ximenez> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasYear> "1910"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Montilla-Moriles
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Montilla-Moriles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Montilla-Moriles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Region> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Pedro_Ximenez
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Pedro_Ximenez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Pedro_Ximenez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Type> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Toro_Albala
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Toro_Albala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Toro_Albala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Winery> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Toro_Albala> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasRating> "4.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Toro_Albala> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasYear> "1910"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Acidity> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1910
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1910> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#1910> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Year> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#4.6
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#4.6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#4.6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Rating> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#5
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Body> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#70
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#70> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#70> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#NumReviews> .
+# 
+# http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#701.05
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#701.05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#701.05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Price> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid2 <http://www.w3.org/2002/07/owl#members> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Young> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Reserve> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#GreatReserve> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Aging> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid7 <http://www.w3.org/2002/07/owl#members> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#White> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Rose> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Red> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#OtherType> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#v> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid12 <http://www.w3.org/2003/11/swrl#body> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#arguments> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#v> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#v> .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> .
+_:genid18 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasYear> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> .
+_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Year> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid12 <http://www.w3.org/2003/11/swrl#head> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> .
+_:genid22 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#CurrentCentury> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid23 <http://www.w3.org/2003/11/swrl#body> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#v> .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> .
+_:genid25 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasYear> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#arguments> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2001"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#v> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Year> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/2003/11/swrl#head> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> .
+_:genid33 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#LastCentury> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid34 <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid36 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#Rating> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#v> .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid38 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#hasRating> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#arguments> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#v> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://www.w3.org/2003/11/swrl#head> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid44 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/coma/ontologies/2023/3/Wine_PAC2#VeryGoodQuality> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
